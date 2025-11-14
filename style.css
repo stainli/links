@@ -1,0 +1,121 @@
+:root {
+    /* Colors for the deep, clean dark aesthetic */
+    --deep-dark: #1e1e1e;
+    --near-black: #111111;
+    --text-color: #f0f0f0;
+    
+    /* Button colors for the subtle, dark effect (Neumorphic style) */
+    --button-base: #252525;
+    --button-shadow-light: rgba(255, 255, 255, 0.05); /* Inner highlight */
+    --button-shadow-dark: rgba(0, 0, 0, 0.4); /* Outer shadow */
+    --button-radius: 40px; /* Highly rounded, pill shape */
+}
+
+/* --- Global & Background --- */
+body.deep-dark-design {
+background: #3E3E46;
+background: radial-gradient(circle,rgba(62, 62, 70, 1) 0%, rgba(38, 38, 43, 1) 100%);
+    color: var(--text-color);
+    /* Using a thin, modern font stack */
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1; /* Allows container to take available space */
+}
+
+/* --- Brand Header Styling (Thin Font, Integrated Logo) --- */
+.brand-header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 70px; 
+    margin-top: 50px; /* Space from top */
+}
+
+.logo-s {
+    height: 90px; /* Increased size for prominence */
+    width: auto;
+    /* Pull the logo closer to the 'TAIN' text */
+    margin-right: -4px; 
+    /* Adjust vertical alignment to match text baseline */
+    margin-top: -10px; 
+}
+
+.brand-name {
+    font-size: 3.5em; /* Large size */
+    font-weight: 300; /* **Thin Font Weight** */
+    letter-spacing: 5px;
+    margin: 0;
+    line-height: 1;
+}
+
+/* --- Link Buttons Styling (Subtle Dark Effect) --- */
+.links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--button-base);
+    border-radius: var(--button-radius);
+    padding: 18px 20px;
+    font-size: 1.1em;
+    font-weight: 400; /* Slightly thicker than header, but still light */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: #f0f0f041 1px solid;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    background: #313137;
+background: linear-gradient(90deg,rgba(49, 49, 55, 1) 0%, rgba(36, 36, 40, 1) 100%);
+}
+
+.link-button:hover {
+    background-color: #2f2f2f; /* Slightly lighter on hover */
+    /* Add a slight 'pressed' look and scale up */
+    box-shadow: 
+        inset 0 2px 8px var(--button-shadow-dark),
+        0 2px 4px var(--button-shadow-dark); 
+    transform: scale(1.02);
+}
+
+.link-button i , span {
+    margin-right: 15px;
+    font-size: 1em;
+    font-weight: lighter;
+}
+.link-button p {
+    margin-right: 15px;
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+/* --- Footer Styling --- */
+.footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    color: #555; /* Subtle dark gray color */
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
