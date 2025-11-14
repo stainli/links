@@ -24,6 +24,7 @@ background: radial-gradient(circle,rgba(62, 62, 70, 1) 0%, rgba(38, 38, 43, 1) 1
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height : 100%;
     min-height: 120vh;
 }
 
@@ -120,3 +121,4 @@ background: linear-gradient(90deg,rgba(49, 49, 55, 1) 0%, rgba(36, 36, 40, 1) 10
     margin: 0;
 
 }
+
